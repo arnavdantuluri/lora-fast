@@ -50,7 +50,7 @@ from diffusers.utils.hub_utils import load_or_create_model_card, populate_model_
 from diffusers.utils.import_utils import is_xformers_available
 from diffusers.utils.torch_utils import is_compiled_module
 import peft
-from lora_layer import LoraLayer as CustomLoraLayer
+from lora.lora_layer import LoraLayer as CustomLoraLayer
 
 peft.tuners.lora.layer.LoraLayer = CustomLoraLayer
 

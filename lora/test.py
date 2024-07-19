@@ -1,4 +1,4 @@
-from lora_kernel import apply_lora_o
+from lora.lora_kernel import apply_lora_o
 import torch
 import torch.nn as nn
 from peft import LoraConfig, inject_adapter_in_model
